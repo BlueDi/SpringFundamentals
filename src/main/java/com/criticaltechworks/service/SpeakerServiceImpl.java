@@ -26,7 +26,7 @@ public class SpeakerServiceImpl implements SpeakerService {
         return repository.findAll();
     }
 
-    public void setRepository(SpeakerRepository repository) {
+    public void setSpeakerRepository(SpeakerRepository repository) {
         System.out.println("SpeakerServiceImpl setter");
         this.repository = repository;
     }
