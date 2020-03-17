@@ -5,6 +5,7 @@ import com.criticaltechworks.repository.SpeakerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Service("speakerService")
@@ -20,6 +21,11 @@ public class SpeakerServiceImpl implements SpeakerService {
     public SpeakerServiceImpl(SpeakerRepository speakerRepository) {
         System.out.println("SpeakerServiceImpl no args constructor");
         repository = speakerRepository;
+    }
+
+    @PostConstruct
+    private void init() {
+        System.out.println("We are called after the constructors");
     }
 
     public List<Speaker> findAll() {
