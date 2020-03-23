@@ -1,2 +1,4 @@
 # SpringFundamentals
-Code related to the Pluralsight's course "Spring Framework: Spring Fundamentals".
+Code related to Pluralsight's courses:
+  1. Spring Framework: Spring Fundamentals;
+  2. Spring Framework: Spring MVC Fundamentals.
