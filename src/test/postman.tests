@@ -2,6 +2,7 @@ openapi: 3.0.0
 info:
   version: 0.2.0
   title: Spring Fundamentals
+  description: API documentation for the Pluralsight Spring Fundamental courses
 servers:
   - url: 'http://localhost:8081/springfundamentals'
 paths:
