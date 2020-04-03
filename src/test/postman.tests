@@ -35,6 +35,27 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
+    post:
+      summary: 'Adds a new user'
+      operationId: addUser
+      tags:
+        - user
+      parameters:
+        - name: firstName
+          in: query
+          description: first name of the user
+          schema:
+            type: string
+        - name: lastName
+          in: query
+          description: last name of the user
+          schema:
+            type: string
+        - name: age
+          in: query
+          description: age of the user
+          schema:
+            type: integer
 components:
   schemas:
     User:
