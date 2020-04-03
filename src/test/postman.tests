@@ -7,7 +7,8 @@ servers:
 paths:
   /user:
     get:
-      summary: 'Returns details about a particular user'
+      summary: 'Get User'
+      description: 'Get details about a user by first name'
       operationId: getUser
       tags:
         - user
@@ -36,7 +37,8 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
     post:
-      summary: 'Adds a new user'
+      summary: 'Add User'
+      description: 'Adds a new user'
       operationId: addUser
       tags:
         - user
